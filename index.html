@@ -880,6 +880,12 @@
         <div class="screen" id="opportunities-screen">
             <div class="opportunities-header">
                 <h2 style="color: var(--primary-color); margin-bottom: 10px;">Recent Opportunities</h2>
+                <div class="ai-insights">
+                    <div class="ai-badge">
+                        <i class="fas fa-robot"></i>
+                        <span>AI-Powered Matching</span>
+                    </div>
+                </div>
                 <div class="search-container">
                     <div class="search-box">
                         <input type="text" class="search-input" placeholder="Search opportunities...">
@@ -891,11 +897,16 @@
                         <span class="filter-tag">Full-time</span>
                         <span class="filter-tag">Remote</span>
                         <span class="filter-tag">Beirut</span>
+                        <span class="filter-tag">High Match</span>
                     </div>
                 </div>
             </div>
 
             <div class="opportunity-card" onclick="showOpportunityDetails('Interior Designer')">
+                <div class="match-percentage high-match">
+                    <i class="fas fa-robot"></i>
+                    <span>94% Match</span>
+                </div>
                 <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=200&fit=crop" alt="Office" class="opportunity-image">
                 <div class="opportunity-content">
                     <div class="opportunity-company">DESIGN STUDIO X</div>
@@ -904,6 +915,7 @@
                         <span><i class="fas fa-clock"></i> Full Time/Freelance</span>
                         <span><i class="fas fa-calendar"></i> 3 months</span>
                         <span><i class="fas fa-dollar-sign"></i> Paid</span>
+                        <span class="salary-range">$1,200-1,500</span>
                     </div>
                     <p class="opportunity-description">We're seeking a creative and detail-oriented Interior Designer to join our dynamic team. The ideal candidate should have experience in both residential and commercial projects...</p>
                     <div class="opportunity-tags">
@@ -911,10 +923,17 @@
                         <span class="opportunity-tag">3D Modeling</span>
                         <span class="opportunity-tag">Project Management</span>
                     </div>
+                    <div class="ai-match-details">
+                        <small><i class="fas fa-lightbulb"></i> Perfect match for your AutoCAD and 3D modeling skills!</small>
+                    </div>
                 </div>
             </div>
 
             <div class="opportunity-card">
+                <div class="match-percentage medium-match">
+                    <i class="fas fa-robot"></i>
+                    <span>87% Match</span>
+                </div>
                 <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=200&fit=crop" alt="Modern Office" class="opportunity-image">
                 <div class="opportunity-content">
                     <div class="opportunity-company">CREATIVE SPACES</div>
@@ -923,6 +942,7 @@
                         <span><i class="fas fa-clock"></i> Internship</span>
                         <span><i class="fas fa-calendar"></i> 6 months</span>
                         <span><i class="fas fa-map-marker-alt"></i> Beirut</span>
+                        <span class="salary-range">Unpaid + Certificate</span>
                     </div>
                     <p class="opportunity-description">Join our award-winning team and gain hands-on experience in residential interior design. Perfect opportunity for students looking to build their portfolio...</p>
                     <div class="opportunity-tags">
@@ -930,10 +950,17 @@
                         <span class="opportunity-tag">Photoshop</span>
                         <span class="opportunity-tag">Client Relations</span>
                     </div>
+                    <div class="ai-match-details">
+                        <small><i class="fas fa-lightbulb"></i> Great for building portfolio and SketchUp experience!</small>
+                    </div>
                 </div>
             </div>
 
             <div class="opportunity-card">
+                <div class="match-percentage medium-match">
+                    <i class="fas fa-robot"></i>
+                    <span>82% Match</span>
+                </div>
                 <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=200&fit=crop" alt="Design Studio" class="opportunity-image">
                 <div class="opportunity-content">
                     <div class="opportunity-company">MODERN LIVING</div>
@@ -942,12 +969,70 @@
                         <span><i class="fas fa-clock"></i> Part Time</span>
                         <span><i class="fas fa-calendar"></i> 4 months</span>
                         <span><i class="fas fa-dollar-sign"></i> $800/month</span>
+                        <span class="remote-badge">Remote Available</span>
                     </div>
                     <p class="opportunity-description">Focus on space optimization and layout design for residential projects. Great opportunity to develop technical skills in space planning and client consultation...</p>
                     <div class="opportunity-tags">
                         <span class="opportunity-tag">Space Planning</span>
                         <span class="opportunity-tag">Technical Drawing</span>
                         <span class="opportunity-tag">Revit</span>
+                    </div>
+                    <div class="ai-match-details">
+                        <small><i class="fas fa-lightbulb"></i> Matches your space planning interests and technical skills!</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="opportunity-card">
+                <div class="match-percentage low-match">
+                    <i class="fas fa-robot"></i>
+                    <span>73% Match</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=200&fit=crop" alt="Architecture Firm" class="opportunity-image">
+                <div class="opportunity-content">
+                    <div class="opportunity-company">URBAN ARCHITECTS</div>
+                    <h3 class="opportunity-title">Design Assistant</h3>
+                    <div class="opportunity-meta">
+                        <span><i class="fas fa-clock"></i> Contract</span>
+                        <span><i class="fas fa-calendar"></i> 2 months</span>
+                        <span><i class="fas fa-dollar-sign"></i> $600/month</span>
+                        <span class="urgent-badge">Urgent</span>
+                    </div>
+                    <p class="opportunity-description">Support senior designers with project documentation and client presentations. Entry-level position perfect for gaining industry experience...</p>
+                    <div class="opportunity-tags">
+                        <span class="opportunity-tag">Documentation</span>
+                        <span class="opportunity-tag">Presentations</span>
+                        <span class="opportunity-tag">Research</span>
+                    </div>
+                    <div class="ai-match-details">
+                        <small><i class="fas fa-lightbulb"></i> Good entry point, though less technical focus than your profile suggests.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="opportunity-card">
+                <div class="match-percentage high-match">
+                    <i class="fas fa-robot"></i>
+                    <span>91% Match</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&h=200&fit=crop" alt="Tech Company" class="opportunity-image">
+                <div class="opportunity-content">
+                    <div class="opportunity-company">TECH SPACES</div>
+                    <h3 class="opportunity-title">UX/UI Designer for Spaces</h3>
+                    <div class="opportunity-meta">
+                        <span><i class="fas fa-clock"></i> Full Time</span>
+                        <span><i class="fas fa-calendar"></i> Permanent</span>
+                        <span><i class="fas fa-dollar-sign"></i> $1,800/month</span>
+                        <span class="trending-badge">Trending</span>
+                    </div>
+                    <p class="opportunity-description">Innovative role combining interior design principles with digital interface design for smart spaces and IoT environments...</p>
+                    <div class="opportunity-tags">
+                        <span class="opportunity-tag">UI/UX</span>
+                        <span class="opportunity-tag">Smart Spaces</span>
+                        <span class="opportunity-tag">Innovation</span>
+                    </div>
+                    <div class="ai-match-details">
+                        <small><i class="fas fa-lightbulb"></i> Perfect blend of your design skills and modern tech trends!</small>
                     </div>
                 </div>
             </div>
@@ -1117,88 +1202,290 @@
 
         <!-- Settings Screen -->
         <div class="screen" id="settings-screen">
-            <div style="padding: 20px;">
-                <h2 style="color: var(--primary-color); margin-bottom: 30px; text-align: center;">Settings</h2>
+            <div style="padding: 20px; max-height: 100vh; overflow-y: auto;">
+                <h2 style="color: var(--primary-color); margin-bottom: 30px; text-align: center; font-weight: 600;">Settings</h2>
                 
                 <div class="profile-section">
-                    <h3 class="section-title">Account</h3>
-                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #eee;">
-                        <span>Edit Profile</span>
-                        <i class="fas fa-chevron-right" style="color: #ccc;"></i>
+                    <h3 class="section-title"><i class="fas fa-user-cog" style="margin-right: 8px;"></i>Account Settings</h3>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-user-edit"></i>
+                            <span>Edit Profile</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
                     </div>
-                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #eee;">
-                        <span>Change Password</span>
-                        <i class="fas fa-chevron-right" style="color: #ccc;"></i>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-lock"></i>
+                            <span>Change Password</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
                     </div>
-                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0;">
-                        <span>Privacy Settings</span>
-                        <i class="fas fa-chevron-right" style="color: #ccc;"></i>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Privacy Settings</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-download"></i>
+                            <span>Download My Data</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
                     </div>
                 </div>
 
                 <div class="profile-section">
-                    <h3 class="section-title">Notifications</h3>
-                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #eee;">
-                        <span>Push Notifications</span>
+                    <h3 class="section-title"><i class="fas fa-robot" style="margin-right: 8px; color: #4CAF50;"></i>AI & Smart Matching</h3>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-brain"></i>
+                            <span>AI Recommendations</span>
+                            <small style="display: block; color: #666; margin-top: 2px;">Get personalized job suggestions</small>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="aiRecommendations" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Smart Matching Algorithm</span>
+                            <small style="display: block; color: #666; margin-top: 2px;">Advanced compatibility scoring</small>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="smartMatching" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-percentage"></i>
+                            <span>Show Match Percentages</span>
+                            <small style="display: block; color: #666; margin-top: 2px;">Display AI-calculated compatibility</small>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="showMatchPercentages" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-cogs"></i>
+                            <span>Learning Preferences</span>
+                            <small style="display: block; color: #666; margin-top: 2px;">Customize AI behavior</small>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="profile-section">
+                    <h3 class="section-title"><i class="fas fa-bell" style="margin-right: 8px;"></i>Notifications</h3>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Push Notifications</span>
+                        </div>
                         <label class="switch">
                             <input type="checkbox" id="pushNotifications" checked>
                             <span class="slider"></span>
                         </label>
                     </div>
-                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #eee;">
-                        <span>Email Notifications</span>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email Notifications</span>
+                        </div>
                         <label class="switch">
                             <input type="checkbox" id="emailNotifications" checked>
                             <span class="slider"></span>
                         </label>
                     </div>
-                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0;">
-                        <span>SMS Notifications</span>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-sms"></i>
+                            <span>SMS Notifications</span>
+                        </div>
                         <label class="switch">
                             <input type="checkbox" id="smsNotifications">
                             <span class="slider"></span>
                         </label>
                     </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-heart"></i>
+                            <span>New Match Alerts</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="matchAlerts" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
                 </div>
 
                 <div class="profile-section">
-                    <h3 class="section-title">App Preferences</h3>
-                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #eee;">
-                        <span>Dark Mode</span>
+                    <h3 class="section-title"><i class="fas fa-palette" style="margin-right: 8px;"></i>App Preferences</h3>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-moon"></i>
+                            <span>Dark Mode</span>
+                        </div>
                         <label class="switch">
                             <input type="checkbox" id="darkMode" onchange="toggleDarkMode()">
                             <span class="slider"></span>
                         </label>
                     </div>
-                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #eee;">
-                        <span>Language</span>
-                        <select style="border: none; background: none; color: #666;">
-                            <option>English</option>
-                            <option>Arabic</option>
-                            <option>French</option>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-language"></i>
+                            <span>Language</span>
+                        </div>
+                        <select class="language-select" style="border: 1px solid #ddd; padding: 8px; border-radius: 8px; background: white;">
+                            <option value="en">English</option>
+                            <option value="ar">العربية</option>
+                            <option value="fr">Français</option>
                         </select>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Location Services</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="location" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-sync"></i>
+                            <span>Auto-Sync Data</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="autoSync" checked>
+                            <span class="slider"></span>
+                        </label>
                     </div>
                 </div>
 
                 <div class="profile-section">
-                    <h3 class="section-title">Support</h3>
-                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #eee;">
-                        <span>Help Center</span>
-                        <i class="fas fa-chevron-right" style="color: #ccc;"></i>
+                    <h3 class="section-title"><i class="fas fa-life-ring" style="margin-right: 8px;"></i>Support & Feedback</h3>
+                    <div class="setting-item" onclick="reportBug()">
+                        <div class="setting-info">
+                            <i class="fas fa-bug"></i>
+                            <span>Report a Bug</span>
+                            <small style="display: block; color: #666; margin-top: 2px;">Help us improve the app</small>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
                     </div>
-                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #eee;">
-                        <span>Contact Support</span>
-                        <i class="fas fa-chevron-right" style="color: #ccc;"></i>
+                    <div class="setting-item" onclick="sendFeedback()">
+                        <div class="setting-info">
+                            <i class="fas fa-comment"></i>
+                            <span>Send Feedback</span>
+                            <small style="display: block; color: #666; margin-top: 2px;">Share your thoughts</small>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
                     </div>
-                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0;">
-                        <span>About WASLET</span>
-                        <i class="fas fa-chevron-right" style="color: #ccc;"></i>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Help Center</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-info-circle"></i>
+                            <span>About WASLET</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
                     </div>
                 </div>
 
-                <button class="btn" onclick="logout()" style="background: #f44336; color: white; margin-top: 30px;">
-                    Sign Out
-                </button>
+                <div class="profile-section">
+                    <h3 class="section-title"><i class="fas fa-rocket" style="margin-right: 8px; color: #FF9800;"></i>Future Development</h3>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-server"></i>
+                            <span>Full-Stack Server Hosting</span>
+                            <small style="display: block; color: #666; margin-top: 2px;">Enhanced performance & scalability</small>
+                        </div>
+                        <span class="coming-soon">Coming Soon</span>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Native Mobile App</span>
+                            <small style="display: block; color: #666; margin-top: 2px;">iOS & Android applications</small>
+                        </div>
+                        <span class="coming-soon">In Development</span>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud Synchronization</span>
+                            <small style="display: block; color: #666; margin-top: 2px;">Cross-device data sync</small>
+                        </div>
+                        <span class="coming-soon">Planned</span>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-video"></i>
+                            <span>Video Interviews</span>
+                            <small style="display: block; color: #666; margin-top: 2px;">Integrated video calling</small>
+                        </div>
+                        <span class="coming-soon">Q2 2024</span>
+                    </div>
+                </div>
+
+                <div class="profile-section developer-info" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 15px; padding: 20px; margin: 20px 0;">
+                    <h3 class="section-title" style="color: white; margin-bottom: 15px;"><i class="fas fa-code" style="margin-right: 8px;"></i>Developer Information</h3>
+                    <div class="developer-card" style="background: rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; backdrop-filter: blur(10px);">
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <div class="developer-avatar" style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
+                                <i class="fas fa-user-circle" style="font-size: 40px; color: white;"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 20px; font-weight: 600;">Hiba Hashem</h4>
+                                <p style="margin: 5px 0 0 0; opacity: 0.9;">Lead Developer & UI/UX Designer</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info" style="margin: 15px 0;">
+                            <div class="contact-item" style="display: flex; align-items: center; margin: 10px 0; padding: 8px; background: rgba(255,255,255,0.1); border-radius: 8px;">
+                                <i class="fas fa-phone" style="margin-right: 10px; width: 20px;"></i>
+                                <a href="tel:+96178810333" style="color: white; text-decoration: none;">+961 78 810 333</a>
+                            </div>
+                            <div class="contact-item" style="display: flex; align-items: center; margin: 10px 0; padding: 8px; background: rgba(255,255,255,0.1); border-radius: 8px;">
+                                <i class="fas fa-envelope" style="margin-right: 10px; width: 20px;"></i>
+                                <a href="mailto:hiba.hashem@waslet.com" style="color: white; text-decoration: none;">hiba.hashem@waslet.com</a>
+                            </div>
+                            <div class="contact-item" style="display: flex; align-items: center; margin: 10px 0; padding: 8px; background: rgba(255,255,255,0.1); border-radius: 8px;">
+                                <i class="fab fa-linkedin" style="margin-right: 10px; width: 20px;"></i>
+                                <a href="#" style="color: white; text-decoration: none;">LinkedIn Profile</a>
+                            </div>
+                            <div class="contact-item" style="display: flex; align-items: center; margin: 10px 0; padding: 8px; background: rgba(255,255,255,0.1); border-radius: 8px;">
+                                <i class="fab fa-github" style="margin-right: 10px; width: 20px;"></i>
+                                <a href="#" style="color: white; text-decoration: none;">GitHub Portfolio</a>
+                            </div>
+                        </div>
+                        
+                        <div class="developer-note" style="text-align: center; margin-top: 15px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 8px;">
+                            <p style="margin: 0; font-style: italic; opacity: 0.9;">"Connecting design dreams with innovative technology solutions."</p>
+                            <p style="margin: 10px 0 0 0; font-size: 12px; opacity: 0.7;">Crafted with ❤️ for the future of work</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logout-section" style="margin-top: 30px; text-align: center;">
+                    <button class="btn" onclick="logout()" style="background: #f44336; color: white; padding: 12px 30px; border-radius: 25px; border: none; font-weight: 600; box-shadow: 0 4px 15px rgba(244, 67, 54, 0.3);">
+                        <i class="fas fa-sign-out-alt" style="margin-right: 8px;"></i>
+                        Sign Out
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -1513,6 +1800,131 @@
             // Add any additional event listeners here
             console.log('Event listeners setup complete');
         }
+
+        // Settings Functions
+        function reportBug() {
+            const bugReport = prompt('Please describe the bug you encountered:');
+            if (bugReport && bugReport.trim()) {
+                // In a real app, this would send to a bug tracking system
+                showToast('Bug report submitted successfully! Thank you for helping us improve WASLET.');
+                console.log('Bug Report:', {
+                    description: bugReport,
+                    timestamp: new Date().toISOString(),
+                    userAgent: navigator.userAgent,
+                    url: window.location.href
+                });
+            }
+        }
+
+        function sendFeedback() {
+            const feedback = prompt('We\'d love to hear your feedback about WASLET:');
+            if (feedback && feedback.trim()) {
+                // In a real app, this would send to a feedback system
+                showToast('Thank you for your feedback! We appreciate your input.');
+                console.log('User Feedback:', {
+                    message: feedback,
+                    timestamp: new Date().toISOString(),
+                    userId: currentUser ? currentUser.email : 'anonymous'
+                });
+            }
+        }
+
+        function openFutureWork() {
+            const futureWorkInfo = `
+🚀 WASLET Future Roadmap:
+
+• Full-stack server deployment
+• Real-time chat with companies
+• Advanced AI matching algorithms
+• Portfolio integration
+• Video interview scheduling
+• Mobile app for iOS/Android
+• Company dashboard
+• Analytics and insights
+
+Stay tuned for these exciting features!`;
+            alert(futureWorkInfo);
+        }
+
+        // Enhanced AI Matching Functions
+        function calculateAIMatch(userProfile, jobRequirements) {
+            // Simulate AI matching algorithm
+            const factors = {
+                skills: Math.random() * 30 + 60, // 60-90%
+                experience: Math.random() * 25 + 65, // 65-90%
+                location: Math.random() * 20 + 70, // 70-90%
+                education: Math.random() * 15 + 75, // 75-90%
+                interests: Math.random() * 10 + 80 // 80-90%
+            };
+            
+            const weightedScore = (
+                factors.skills * 0.3 +
+                factors.experience * 0.25 +
+                factors.location * 0.2 +
+                factors.education * 0.15 +
+                factors.interests * 0.1
+            );
+            
+            return Math.round(weightedScore);
+        }
+
+        function updateMatchPercentages() {
+            const matchElements = document.querySelectorAll('.match-percentage');
+            matchElements.forEach(element => {
+                const percentage = calculateAIMatch(currentUser, {});
+                element.textContent = `${percentage}% Match`;
+                
+                // Update color based on match percentage
+                if (percentage >= 85) {
+                    element.style.background = 'var(--success-color)';
+                } else if (percentage >= 70) {
+                    element.style.background = 'var(--warning-color)';
+                } else {
+                    element.style.background = '#ff5722';
+                }
+            });
+        }
+
+        function showAIInsights(percentage) {
+            let insights = [];
+            
+            if (percentage >= 90) {
+                insights = [
+                    '🎯 Perfect match for your skills',
+                    '📍 Ideal location preference',
+                    '💼 Excellent career growth opportunity'
+                ];
+            } else if (percentage >= 80) {
+                insights = [
+                    '✅ Strong skill alignment',
+                    '🌟 Good cultural fit',
+                    '📈 Potential for skill development'
+                ];
+            } else if (percentage >= 70) {
+                insights = [
+                    '🔄 Some skill gaps to bridge',
+                    '📚 Learning opportunities available',
+                    '🎯 Partial match with requirements'
+                ];
+            } else {
+                insights = [
+                    '📖 Significant learning curve',
+                    '🚀 Great for career pivot',
+                    '💡 Opportunity to expand skillset'
+                ];
+            }
+            
+            return insights;
+        }
+
+        // Auto-update match percentages when opportunities screen is shown
+        const originalShowScreen = showScreen;
+        showScreen = function(screenId) {
+            originalShowScreen(screenId);
+            if (screenId === 'opportunities-screen') {
+                setTimeout(updateMatchPercentages, 500);
+            }
+        };
     </script>
 
     <style>
@@ -1560,6 +1972,174 @@
 
         input:checked + .slider:before {
             transform: translateX(26px);
+        }
+
+        /* Enhanced Settings Screen Styles */
+        .setting-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .setting-item:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 8px;
+            margin: 0 -10px;
+        }
+
+        .setting-item:last-child {
+            border-bottom: none;
+        }
+
+        .setting-info {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .setting-info i {
+            margin-right: 12px;
+            width: 20px;
+            color: var(--primary-color);
+            font-size: 16px;
+        }
+
+        .setting-info span {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .setting-info small {
+            font-size: 12px;
+            color: #666;
+            font-weight: 400;
+        }
+
+        .coming-soon {
+            background: linear-gradient(135deg, #FF9800, #FF5722);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .language-select {
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            border-radius: 8px;
+            background: white;
+            color: #333;
+            font-size: 14px;
+            min-width: 120px;
+        }
+
+        .language-select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.1);
+        }
+
+        .developer-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .developer-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            padding: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .developer-note {
+            text-align: center;
+            margin-top: 15px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-section {
+            margin-bottom: 25px;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f0f0f0;
+        }
+
+        .logout-section {
+            margin-top: 30px;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logout-section .btn {
+            background: #f44336;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            border: none;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(244, 67, 54, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .logout-section .btn:hover {
+            background: #d32f2f;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(244, 67, 54, 0.4);
         }
 
         /* Additional Mobile Optimizations */
